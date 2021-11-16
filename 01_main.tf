@@ -4,9 +4,7 @@ provider "aws" {
 
 
 resource "aws_key_pair" "suhee_key" {
-    # key_name = "suhee1-key"
     key_name = var.key
-    # public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZH1koEdJVL7WmWRlIscYXPn39SrtKDdTdfoADplUKdl+mlhtUfoqwfclsrUDbjptGH0iqGQl2kVVZNGhpBN1x2UI8n+K6a2ZBhNNYWUQ21cf235VinnGtyzcYS8U/AwbQloXg3wn5uel68Og+SrTbheti0DU3EWH481yuxmUjx/DqrWrbC0v8Jkl7gfRTezPUkLymzcX5x6PJlkH9SfAhay187Gr+LKiAbACojMriorGlAPASqcl0z/1r9MptrrvZV+GXovQAVSk8rjfezzSaubU3xZMTHxxUK9Nspw1YYLUDqUXi4t+Q8ue8D966Wd7Mhm9MuKuESszr4L1LmuCMDYZ0PVwBXPUGbklwjsX8W+RuhGYcbkpmMlQQzbZbETEtZrv8UKPes7sqmamGcqC6wmc72uQop9Mb6ShWe8bhd7GL2vHdFqgLixJZisBoBoV7jwdVNkoESBC+tB/6vLSs+/SlOoIEASjtju7Hqp+4XVUhhcT1UC1KtWE4gGRGLqc="
     public_key = file("../../.ssh/suhee-key.pub")
 }
 
